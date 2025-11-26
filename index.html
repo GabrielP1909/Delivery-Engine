@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossiê Digital - Engenharia Reversa da Atribuição de Entregadores (Base: iFood)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="light">
+    <!-- Toggle de Tema -->
+    <div class="theme-toggle">
+        <button id="themeToggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+            <span class="theme-text">Modo Escuro</span>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/mnt/data/Gemini_Generated_Image_ufnp3dufnp3dufnp-convertido-de-png-removebg-preview.png" alt="BELMERY DASHNE">
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#flowchart">Fluxograma</a></li>
+                    <li><a href="#data-model">DER</a></li>
+                    <li><a href="#mockups">Mockups</a></li>
+                    <li><a href="#impact">Impacto</a></li>
+                    <li><a href="#resources">Downloads</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li class="nav-cta"><a href="#" class="btn btn-small">Baixar Dossiê</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="bg-pattern"></div>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Dossiê Digital – Engenharia Reversa da Atribuição de Entregadores (Base: iFood)</h1>
+                    <p class="hero-subtitle">Um projeto investigativo técnico realizado por um trio especializado em análise de sistemas e engenharia reversa de algoritmos.</p>
+                    <div class="hero-buttons">
+                        <a href="#flowchart" class="btn btn-primary"><i class="fas fa-project-diagram"></i> Ver Fluxograma</a>
+                        <a href="#" class="btn btn-secondary"><i class="fas fa-download"></i> Baixar PDF</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="tech-illustration">
+                        <div class="illustration-content">
+                            <div class="data-flow">
+                                <div class="flow-line line-1"></div>
+                                <div class="flow-line line-2"></div>
+                                <div class="flow-line line-3"></div>
+                            </div>
+                            <div class="nodes">
+                                <div class="node node-1">
+                                    <i class="fas fa-user"></i>
+                                    <span>Cliente</span>
+                                </div>
+                                <div class="node node-2">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Restaurante</span>
+                                </div>
+                                <div class="node node-3">
+                                    <i class="fas fa-motorcycle"></i>
+                                    <span>Entregador</span>
+                                </div>
+                                <div class="node node-4">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Algoritmo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Por que iFood -->
+    <section class="why-ifood" id="why">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title center">
+                <h2>Por que escolhemos o iFood?</h2>
+            </div>
+            <div class="why-content">
+                <div class="why-text">
+                    <p>O iFood foi selecionado como aplicativo-base para nossa análise devido à sua representatividade no mercado brasileiro e a complexidade de seu sistema de atribuição de entregadores. Como líder do setor, o iFood implementa algoritmos sofisticados que consideram múltiplas variáveis para otimizar a experiência do usuário e a eficiência operacional.</p>
+                    <div class="highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Maior representatividade nacional</h3>
+                                <p>Com mais de 70% de market share no Brasil, o iFood oferece um estudo de caso representativo.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Complexidade real na logística</h3>
+                                <p>O sistema lida com milhares de pedidos simultâneos, exigindo algoritmos robustos de matching.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Algoritmos robustos de matching</h3>
+                                <p>Utiliza machine learning e análise preditiva para otimizar a atribuição de entregadores.</p>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="highlight-content">
+                                <h3>Dados abundantes para análise</h3>
+                                <p>A escala de operações gera dados valiosos para entender padrões e comportamentos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trio-analysis card">
+                    <h3>Análise do Trio</h3>
+                    <p>Nossa equipe multidisciplinar aplicou técnicas de engenharia reversa para desvendar a lógica por trás do sistema de atribuição do iFood.</p>
+                    <div class="team-members">
+                        <div class="member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <p class="member-name">Ana Silva</p>
+                            <p class="member-role">Especialista em Dados</p>
+                        </div>
+                        <div class="member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <p class="member-name">Carlos Mendes</p>
+                            <p class="member-role">Engenheiro de Software</p>
+                        </div>
+                        <div class="member">
+                            <div class="member-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <p class="member-name">Beatriz Lima</p>
+                            <p class="member-role">Analista de UX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Fluxograma Animado -->
+    <section id="flowchart">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title center">
+                <h2>Fluxograma Interativo do Processo</h2>
+            </div>
+            <p class="text-center">Visualize o processo completo de atribuição de entregadores em tempo real com nosso diagrama animado interativo.</p>
+            
+            <div class="animated-diagram-container">
+                <div class="diagram-controls-panel">
+                    <div class="control-panel">
+                        <h3>🎯 Controle do Processo</h3>
+                        
+                        <div class="step-info">
+                            <h4 id="stepTitle">Pronto para iniciar</h4>
+                            <p id="stepDescription">Clique em "Iniciar" para visualizar o processo completo de atribuição de entregadores passo a passo.</p>
+                        </div>
+                        
+                        <div class="progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span>Progresso:</span>
+                                <span id="progressText">0%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="controls">
+                            <div class="control-group">
+                                <button class="btn btn-primary" id="startBtn">
+                                    <i class="fas fa-play"></i> Iniciar
+                                </button>
+                                <button class="btn btn-outline" id="pauseBtn" disabled>
+                                    <i class="fas fa-pause"></i> Pausar
+                                </button>
+                            </div>
+                            <div class="control-group">
+                                <button class="btn btn-outline" id="stepBackward">
+                                    <i class="fas fa-step-backward"></i> Voltar
+                                </button>
+                                <button class="btn btn-outline" id="stepForward">
+                                    <i class="fas fa-step-forward"></i> Avançar
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="step-info">
+                            <span id="stepCounter">Passo 0 de 11</span>
+                            <button class="btn btn-outline btn-small" id="resetBtn">
+                                <i class="fas fa-redo"></i> Reiniciar
+                            </button>
+                        </div>
+                        
+                        <div class="status">
+                            <h4>📊 Status do Sistema</h4>
+                            <p id="statusText">Aguardando início da simulação...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="legend">
+                        <h3>📖 Legenda do Diagrama</h3>
+                        <div class="legend-item">
+                            <div class="legend-color pending"></div>
+                            <span>Passo pendente</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color active"></div>
+                            <span>Passo em execução (luz verde)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color completed"></div>
+                            <span>Passo concluído</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-connection normal"></div>
+                            <span>Fluxo principal</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-connection fallback"></div>
+                            <span>Fluxo alternativo</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-connection learning"></div>
+                            <span>Feedback e aprendizado</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="diagram-wrapper">
+                    <div class="diagram" id="diagram">
+                        <!-- Diagrama será gerado via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Modelo de Dados -->
+    <section class="data-model" id="data-model">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title center">
+                <h2>Modelo de Dados (DER)</h2>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab active" data-tab="der">DER</div>
+                <div class="tab" data-tab="entities">Entidades</div>
+                <div class="tab" data-tab="rules">Regras</div>
+            </div>
+            
+            <div class="tab-content active" id="der-tab">
+                <div class="der-diagram">
+                    <div class="flowchart-placeholder">
+                        <i class="fas fa-database"></i>
+                        <h3>Diagrama Entidade-Relacionamento</h3>
+                        <p>Modelo conceitual do sistema de atribuição</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="entities-tab">
+                <div class="entities-list">
+                    <div class="entity-card card">
+                        <h3>Entregador</h3>
+                        <p>Atributos: ID, localização, status, taxa de aceitação, avaliação, veículo, etc.</p>
+                    </div>
+                    <div class="entity-card card">
+                        <h3>Pedido</h3>
+                        <p>Atributos: ID, restaurante, cliente, valor, horário, localização de entrega, etc.</p>
+                    </div>
+                    <div class="entity-card card">
+                        <h3>Restaurante</h3>
+                        <p>Atributos: ID, localização, categoria, tempo de preparo médio, etc.</p>
+                    </div>
+                    <div class="entity-card card">
+                        <h3>Região</h3>
+                        <p>Atributos: ID, densidade de pedidos, disponibilidade de entregadores, tráfego, etc.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="rules-tab">
+                <div class="rules-list">
+                    <div class="rule-card card">
+                        <h3>Regra de Proximidade</h3>
+                        <p>Prioriza entregadores mais próximos do restaurante, considerando distância em tempo real.</p>
+                    </div>
+                    <div class="rule-card card">
+                        <h3>Regra de Performance</h3>
+                        <p>Considera histórico de aceitação e pontualidade do entregador.</p>
+                    </div>
+                    <div class="rule-card card">
+                        <h3>Regra de Disponibilidade</h3>
+                        <p>Verifica se o entregador está ativo e aceitando pedidos no momento.</p>
+                    </div>
+                    <div class="rule-card card">
+                        <h3>Regra de Equilíbrio</h3>
+                        <p>Distribui pedidos para evitar sobrecarga em determinadas regiões.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Mockups -->
+    <section id="mockups">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title center">
+                <h2>Raio-X da Interface</h2>
+            </div>
+            <p class="text-center">Análise detalhada da interface do iFood com anotações sobre a origem dos dados e a lógica por trás de cada elemento.</p>
+            
+            <div class="mockups-grid">
+                <div class="mockup-card card">
+                    <div class="mockup-img">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="mockup-annotations">
+                        <div class="annotation" data-number="1" data-text="Interface de rastreamento em tempo real com localização do entregador">
+                            <span class="annotation-number">1</span>
+                        </div>
+                        <div class="annotation" data-number="2" data-text="Tempo estimado de entrega calculado por algoritmos preditivos">
+                            <span class="annotation-number">2</span>
+                        </div>
+                        <div class="annotation" data-number="3" data-text="Status do pedido atualizado automaticamente">
+                            <span class="annotation-number">3</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tela de Acompanhamento</h3>
+                        <p>Interface principal de acompanhamento do pedido pelo cliente.</p>
+                    </div>
+                </div>
+                
+                <div class="mockup-card card">
+                    <div class="mockup-img">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="mockup-annotations">
+                        <div class="annotation" data-number="1" data-text="Sistema de aceitação de pedidos com informações detalhadas">
+                            <span class="annotation-number">1</span>
+                        </div>
+                        <div class="annotation" data-number="2" data-text="Mapa de navegação integrado com melhor rota">
+                            <span class="annotation-number">2</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>App do Entregador</h3>
+                        <p>Interface do aplicativo utilizado pelos entregadores.</p>
+                    </div>
+                </div>
+                
+                <div class="mockup-card card">
+                    <div class="mockup-img">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="mockup-annotations">
+                        <div class="annotation" data-number="1" data-text="Painel de controle de pedidos em tempo real">
+                            <span class="annotation-number">1</span>
+                        </div>
+                        <div class="annotation" data-number="2" data-text="Gestão de entregadores disponíveis">
+                            <span class="annotation-number">2</span>
+                        </div>
+                        <div class="annotation" data-number="3" data-text="Relatórios de performance e métricas">
+                            <span class="annotation-number">3</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Painel do Restaurante</h3>
+                        <p>Interface utilizada pelos restaurantes para gerenciar pedidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Análise de Impacto -->
+    <section class="impact-analysis" id="impact">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title center">
+                <h2>Análise de Impacto (Psicologia + UX)</h2>
+            </div>
+            <p class="text-center">Investigamos os aspectos psicológicos e de experiência do usuário por trás do sistema de atribuição do iFood.</p>
+            
+            <div class="impact-grid">
+                <div class="impact-card card">
+                    <div class="impact-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Velocidade Percebida</h3>
+                    <p>O sistema cria a ilusão de rapidez através de estimativas otimistas e atualizações constantes.</p>
+                </div>
+                <div class="impact-card card">
+                    <div class="impact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Rastreamento em Tempo Real</h3>
+                    <p>Mostrar a localização do entregador reduz a ansiedade e aumenta a sensação de controle.</p>
+                </div>
+                <div class="impact-card card">
+                    <div class="impact-icon">
+                        <i class="fas fa-user-clock"></i>
+                    </div>
+                    <h3>Redução de Ansiedade</h3>
+                    <p>Notificações proativas e estimativas precisas diminuem a incerteza durante a espera.</p>
+                </div>
+                <div class="impact-card card">
+                    <div class="impact-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Previsão Confiável</h3>
+                    <p>Algoritmos precisos criam confiança no sistema e na marca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Recursos -->
+    <section id="resources">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title center">
+                <h2>Recursos / Apêndices</h2>
+            </div>
+            
+            <div class="resources-grid">
+                <div class="resource-card card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Glossário Técnico</h3>
+                    <p>Termos e conceitos técnicos utilizados na análise do sistema.</p>
+                    <a href="#" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Acessar</a>
+                </div>
+                <div class="resource-card card">
+                    <div class="resource-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Pseudocódigo</h3>
+                    <p>Representação em pseudocódigo dos algoritmos identificados.</p>
+                    <a href="#" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Visualizar</a>
+                </div>
+                <div class="resource-card card">
+                    <div class="resource-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Referências</h3>
+                    <p>Fontes e materiais consultados durante a pesquisa.</p>
+                    <a href="#" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Consultar</a>
+                </div>
+            </div>
+            
+            <div class="download-section">
+                <a href="#" class="btn btn-primary btn-large"><i class="fas fa-file-pdf"></i> Baixar Dossiê Completo (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section class="why-ifood" id="about">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title center">
+                <h2>Sobre o Projeto</h2>
+            </div>
+            <div class="about-content">
+                <p>Este dossiê digital foi desenvolvido como parte do projeto "Bastidores Digitais", uma iniciativa de engenharia reversa aplicada a sistemas de grande escala. O trabalho foi realizado por um trio de especialistas com o objetivo de desvendar a lógica por trás da atribuição de entregadores no iFood.</p>
+                <p>Utilizamos uma abordagem multidisciplinar que combina análise de dados, engenharia de software e experiência do usuário para compreender profundamente o funcionamento do sistema.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/mnt/data/Gemini_Generated_Image_ufnp3dufnp3dufnp-convertido-de-png-removebg-preview.png" alt="BELMERY DASHNE">
+                    <p>Dossiê Digital - Engenharia Reversa da Atribuição de Entregadores</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#flowchart">Fluxograma</a></li>
+                        <li><a href="#data-model">Modelo de Dados</a></li>
+                        <li><a href="#mockups">Mockups</a></li>
+                        <li><a href="#impact">Análise de Impacto</a></li>
+                        <li><a href="#resources">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#">Glossário Técnico</a></li>
+                        <li><a href="#">Pseudocódigo</a></li>
+                        <li><a href="#">Referências</a></li>
+                        <li><a href="#">Apresentação</a></li>
+                        <li><a href="#">Relatório Técnico</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="team-credits">
+                <h3>Equipe do Projeto</h3>
+                <div class="team-members-footer">
+                    <div class="member-footer">
+                        <div class="member-footer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p>Ana Silva<br><small>Especialista em Dados</small></p>
+                    </div>
+                    <div class="member-footer">
+                        <div class="member-footer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p>Carlos Mendes<br><small>Engenheiro de Software</small></p>
+                    </div>
+                    <div class="member-footer">
+                        <div class="member-footer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p>Beatriz Lima<br><small>Analista de UX</small></p>
+                    </div>
+                </div>
+                <p class="project-info">Projeto Acadêmico - Bastidores Digitais | Tema 11: A lógica de atribuição de entregadores em apps de delivery</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="diagram-animation.js"></script>
+</body>
+</html>
