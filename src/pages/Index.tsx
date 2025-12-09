@@ -12,10 +12,10 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Bastidores Digitais - Engenharia Reversa do iFood</title>
+        <title>Delivery Engine - Engenharia do iFood</title>
         <meta 
           name="description" 
-          content="Dossiê digital sobre a lógica de atribuição de entregadores do iFood. Projeto acadêmico de engenharia reversa conceitual." 
+          content="Projeto acadêmico digital sobre a lógica de atribuição de entregadores do iFood. Projeto acadêmico de engenharia reversa conceitual." 
         />
       </Helmet>
       
